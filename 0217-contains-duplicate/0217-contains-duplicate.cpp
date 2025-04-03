@@ -7,14 +7,12 @@ public:
             m[nums[i]]++;
         }
         for(auto it:m){
-            arr.push_back(it.second);
-        }
-        for(int i=0;i<arr.size();i++){
-            if(arr[i]>=2){
+            if(it.second>=2){
                 return true;
             }
         }
+    
         return false;
-
+       
     }
 };
